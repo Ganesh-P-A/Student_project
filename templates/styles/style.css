@@ -1,0 +1,29 @@
+/* .user {
+    color: red;
+  } */
+
+  label,
+  ul {
+    border: 2px solid rebeccapurple;
+    padding: .5em;
+    margin-right: auto  ;
+  }
+  
+  .block,
+  .user,.password{
+    border: 2px solid blue;
+    padding: .5em;
+  }
+  /* button {
+    border: 2px solid blue;
+    padding: .5em;
+  } */
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .block {
+    display: block;
+  }

@@ -1,0 +1,104 @@
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F3EDC8;
+        background-image: linear-gradient(to right, #22c1c3,#fdbb2d);
+    }
+
+    form {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px ;
+        border-radius: 5px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+
+    input[type="submit"] {
+        background-color: #fdbb2d;
+        color: white ;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-weight: 545;
+        color: black ;
+    }
+</style>
+
+
+<h2><center>Registration Form</center></h2>
+<form action="/create_account" method="POST">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" size="15" required><br><br>
+    <label for="middlename">Middle Name:</label>
+    <input type="text" id="middlename" name="middlename" size="15"required><br><br>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" size="15"required><br><br>
+
+    <label for="course">Course:</label>
+    <select id="course" name="course" required>
+        <option value="">Select Course</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="MBA">MBA</option>
+        <option value="MCA">MCA</option>
+        <option value="M.Tech">M.Tech</option>
+    </select><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male"> Male<br>
+    <input type="radio" id="female" name="gender" value="female"> Female<br>
+    <input type="radio" id="other" name="gender" value="other"> Other<br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phno" name="phno"   required>
+   
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" cols="80" rows="5" required></textarea><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+
+    <input type="submit" value="Submit">
+</form>
+
+

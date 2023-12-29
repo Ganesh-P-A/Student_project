@@ -1,0 +1,250 @@
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Student DashBoard</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+    </head>
+    <style>
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            background: #dfe9f5;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        nav{
+            position: relative;
+            background: #3498db; /* Blue */
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            left: 0;
+            background-color: antiquewhite;
+            width: auto;
+            overflow: hidden;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+
+        }
+
+        .logo{
+            text-align: center;
+            display: flex;
+            margin: 10px 0 0 10px;
+        }
+        li{
+            list-style: none;
+            text-align: start;
+        }
+        .logo img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .logo span{
+            font-weight: bold;
+            padding-left: 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        a{
+            position: relative;
+            color: rgb(85, 83, 83);
+            font-size: 14px;
+            display: table;
+            width: 280px;
+            padding: 10px;
+        }
+        nav .fas{
+            position: relative;
+            width: 70px;
+            height: 40px;
+            top: 14px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .nav-item{
+            position: relative;
+            top: 12px;
+            margin-left: 10px;
+        }
+        a:hover{
+            background: #eee;
+        }
+
+        .logout{
+            position: absolute;
+            bottom: 0;
+        }
+
+        .main{
+            position:relative; 
+            padding:20px;
+            width: 100%;   
+             
+        }
+        .main-top{
+            display: flex;
+            width: 100%;
+            /* font-size: 20px; */
+        }
+        /* .main-top aa{
+           
+        } */
+        .main-top a[class="fas fa-user-cog"]{
+            position: absolute;
+            right: 0;
+            margin: 10px 30px;
+            color: rgb(110,109,109);
+            cursor:pointer;
+            width: auto;
+            
+        }
+        .main-top i[class="fas fa-home"]{
+            position: absolute;
+            left: 0;
+            margin: 10px 30px;
+            color: rgb(110,109,109);
+            cursor:pointer;
+        }
+       
+        .Skills{
+            display: flex;
+            margin-top: 20px;
+            
+        }
+        .Skills .card{
+            width:25%;
+            margin:10px;
+            background: #fff;
+            text-align: center;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0 2opx 35px rgba(0,0,0,0.1);
+        }
+        .Skills .card h3{
+            margin: 10px;
+            text-transform: capitalize;
+        }       
+        .Skills .card p{
+            font-size: 12px;
+        }
+        .Skills .card a{
+            background: orangered;
+            color: #fff;
+            padding: 7px 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            width: auto;
+        }
+        .main-skills .card button:hover{
+            background: rgba(223, 70, 15, 0.856);
+        }
+        .main-skills .card i{
+            font-size: 22px;
+            padding: 10px;
+        }
+
+
+    </style>
+    <body>
+        <form action="/tp" method='POST'>
+       <div class="container">
+        <nav>
+            <ul>
+            <li>
+                <a action="/home" class="logo">  
+                    <!-- make link for home page for your website  -->
+                <img src="/static/logo.png" alt="">
+                <span class="nav-item">DashBoard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/home">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-item">Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/profile">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/payment">
+                    <i class="fas fa-wallet"></i>
+                    <span class="nav-item">Payment Info</span>
+                </a>
+            </li>
+
+           <li>
+                <a href="/schedule">
+                    <i class="fas fa-calendar"></i>
+                    <span class="nav-item">Schedules</span>
+                </a>
+            </li> 
+            </ul>
+
+        </nav>
+    
+        <section class="main">
+            <div class="main-top">           
+                 <h1>Home</h1>
+                 <a href="/log_out" class="fas fa-user-cog"></a>
+                <!-- <a href=""></a><i class="fas fa-user-cog"></i></a> -->
+            </div>
+            <div class="Skills">
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Python developent</h3>
+                    <p>No one joined us till yet</p>
+                    <a href="/python">get Started</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-android"></i>
+                    <h3>Android developent</h3>
+                    <p>No one joined us till yet</p>
+                    <a href="/android">get Started</a>
+                </div>
+
+                <div class="card">
+                    <i class="fas fa-bath"></i>
+                    <h3>english speaking</h3>
+                    <p>No one joined us till yet</p>
+                    <a href="/english">get Started</a>
+                </div>
+            </div>
+
+            <section class="main-course">
+               <br><br>
+                <h1>My Courses </h1>                
+
+            </section>
+
+                 </section>
+              
+         </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+
+<!-- <style>
+form [name="form1"],form [name="form2"]{
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 300px;  /* Adjust width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.user, .password {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+input[type="submit"] {
+  background-color: #4CAF50;  /* Green */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;  /* Darker green on hover */
+}
+input::placeholder {
+  color: #999;  /* Gray for placeholder text */
+}
+
+
+</style> -->
+
+<style>
+form {
+  /* Center the form within its container */
+  margin: 0 auto;
+  width: 300px;  /* Adjust width as needed */
+  padding: 20px;
+  border-collapse: collapse;  /* Remove table borders */
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;  /* Remove spacing between cells */
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.user, .password {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+input[type="submit"] {
+  background-color: #4CAF50;  /* Green */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;  /* Darker green on hover */
+}
+td {
+  text-align: center;  /* Center buttons within cells */
+}
+input::placeholder {
+  color: #999;  /* Gray for placeholder text */
+}
+
+</style>
+
+<form action="/process_data" method="POST" name="form1">
+<table>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter username" class="user" required><br><br> 
+    <label for="password">Password:</label>
+    <input type="password" id="password"  name="password" placeholder="Enter password" class="password" required><br><br>
+ <tr>
+  
+    <td><input type="submit" name="submit" value="Submit" id="submit"></td>
+    <a href="/creata">Create account</a>
+</form>
+</tr>
+</table>
+
+
+    
